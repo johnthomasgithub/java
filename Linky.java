@@ -62,7 +62,6 @@ class LinkList{
 		System.out.println(n.data);
 	}
 }
-
 public class Linky {
 	public static void main(String[] args) {
 		LinkList list = new LinkList();
