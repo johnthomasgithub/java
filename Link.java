@@ -125,8 +125,16 @@ class SNode{
 		}
 		return false;
 	}
+	public SNode rotateClockwise(SNode node, int k)
+	{
+		if(node == null)
+			return node;
+		int size = getSize(node);
+		
 	}
 		
+		
+	}
 	public class Link {
 		
 	public static void main(String[] args) {
@@ -136,8 +144,7 @@ class SNode{
 		head = list.insert(232, head);
 		head = list.insert(123, head);
 		head = list.insert(145, head);
-		System.out.println(list.getSize(head));
-		System.out.println(list.search(1,head));
+		head = list.rotateClockwise(head,2);
 		list.printList(head);
 	}
 }
