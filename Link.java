@@ -96,7 +96,37 @@ class SNode{
 			node.next = deleteAtPosition(node.next, position-1);
 			return node;		
 		}
+		public int getSize(SNode node)
+		{
+			int count=0;
+			if(node ==null)
+			{
+				return 0;
+			}
+			else
+			{
+				while(node!=null)
+				{
+					count++;
+					node = node.next;
+				}
+				return count;
+			}
+		}
+		public boolean search(int val,SNode node)
+		{
+			if(node == null)
+				return false;
+		while(node !=null)
+		{
+			if(node.data ==val)
+				return true;
+			node = node.next;
+		}
+		return false;
 	}
+	}
+		
 	public class Link {
 		
 	public static void main(String[] args) {
@@ -106,7 +136,8 @@ class SNode{
 		head = list.insert(232, head);
 		head = list.insert(123, head);
 		head = list.insert(145, head);
-		head = list.deleteAtPosition(head, 3);
+		System.out.println(list.getSize(head));
+		System.out.println(list.search(1,head));
 		list.printList(head);
 	}
 }
