@@ -127,10 +127,32 @@ class SNode{
 	}
 	public SNode rotateClockwise(SNode node, int k)
 	{
-		if(node == null)
+		if(node == null || k<0 )
 			return node;
 		int size = getSize(node);
+		k = k % size;
+		if(k == 0)
+		{
+			return node;
+		}
+		SNode tmp = node;
+		int i = 1;
+		while(i < size-k)
+		{
+			tmp = tmp.next;
+			i++;
+		}
+		SNode temp = tmp.next;
+		SNode head = temp;
+		tmp.next = null;
 		
+		i = 1;
+		while(temp.next !=null)
+		{
+			temp = temp.next;
+		}
+		temp.next = node;
+		return head;
 	}
 		
 		
@@ -144,7 +166,7 @@ class SNode{
 		head = list.insert(232, head);
 		head = list.insert(123, head);
 		head = list.insert(145, head);
-		head = list.rotateClockwise(head,2);
+		head = list.rotateClockwise(head,0);
 		list.printList(head);
 	}
 }
