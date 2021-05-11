@@ -19,6 +19,6 @@ public class Stringlen {
 				index = i;
 			}
 		}
-		System.out.println(min + arr[index]);
+		System.out.println(arr[index]);
 	}
 }
