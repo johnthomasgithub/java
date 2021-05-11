@@ -154,8 +154,6 @@ class SNode{
 		temp.next = node;
 		return head;
 	}
-		
-		
 	}
 	public class Link {
 		
