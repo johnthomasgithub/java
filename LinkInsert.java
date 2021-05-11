@@ -57,8 +57,26 @@ class LinkList{
 			return null;
 		}
 		return node.next;
+	}	
+	public Node insertAtPos(int data,int position,Node head)
+	{
+		if(position <1) {
+			System.out.println("enter valid position");
+			return head;
+		}
+		if(head ==null && position >1)
+		{
+			System.out.println("enter a valid position");
+		}
+		if(position == 1)
+		{
+			Node newNode = getNewNode(data);
+			newNode.next = head;
+			return newNode;
+		}
+		head.next = insertAtPos(data, position-1, head.next);
+		return head;	
 	}
-		
 }
 public class LinkInsert {
 	public static void main(String[] args) {
@@ -68,9 +86,11 @@ public class LinkInsert {
 		head = list.insert(13, head);
 		head = list.insert(14, head);
 		head = list.insert(15, head);
-		head = list.delete(head);
-		head = list.deleteFirst(head);
+		//head = list.delete(head);
+		//head = list.deleteFirst(head);
 		list.printList(head);
+		head = list.insertAtPos(34,3,head);
+		
 		
 	}
 
