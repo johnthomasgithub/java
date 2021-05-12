@@ -71,8 +71,6 @@ class LL{
 		return temp;
 	}
 }
-
-
 public class DeleteNode {
 
 	public static void main(String[] args) {
@@ -80,11 +78,12 @@ public class DeleteNode {
 		LL list = new LL();
 		head = list.insert(1,head);
 		head = list.insert(2,head);
-		head = list.insert(7,head);
-		head = list.insert(200,head);
+		head = list.insert(3,head);
+		head = list.insert(4,head);
+		head = list.insert(5,head);
+		head = list.insert(6,head);
 		//head = list.insert(1,head);
 		DNode reverse = list.reverse(head);
 		list.show(reverse);
 	}
-
 }
