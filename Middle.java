@@ -40,6 +40,7 @@ class ML{
 		}
 		return a;
 	}
+	
 }
 public class Middle {
 
@@ -53,8 +54,7 @@ public class Middle {
 		head = list.insert(head,5);
 		head = list.insert(head,6);
 		list.show(head);
-		MNode middle = list.getMiddle(head);
-		System.out.println(middle.data);
+		head = list.sort(head);
 
 
 	}
