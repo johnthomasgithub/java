@@ -17,5 +17,4 @@ public class NextAlpha {
 		}
 		System.out.print(s);
 	}
-
 }
