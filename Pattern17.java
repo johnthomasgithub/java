@@ -9,14 +9,14 @@ public class Pattern17 {
 			for(int i=n;i>=1;i--)
 			{
 				int m = i;
-				for(int j=n;j>=i;j--)
+				for(int j=1;j<=n;j++)
 				{
+					if(m<=n)
 					System.out.print(m++);
+					else
+						System.out.print("5");
 				}
-				for(int k=1;k<=i-1;k++)
-				{
-					System.out.print(n);
-				}
+				
 				System.out.println();
 			}
 		}
