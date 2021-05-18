@@ -87,7 +87,7 @@ public class MergeLink {
 		//list.show(head2);
 		//list.merge(head,head2);
 		ONode mergeSorted = list.mergeTwoList(head,head2);
-		list.show(mergeSorted);
+		list.show(mergeSorted); 
 
 	}
 
