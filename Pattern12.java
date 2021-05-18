@@ -5,28 +5,26 @@ public class Pattern12 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		for(int i=1;i<=n;i++)
+		int m = 0;
+		for(int i=0;i<n;i++)
 		{
-			if(i%2 == 0)
-			{
-				int s = n-i;
-				for(int k=1;k<=i;k++)
-				{
-					System.out.print(k);
-				}
-			}else
-			{
-				int m = 1;
-				for(int j=i;j<=n;j++)
+			if(i%2 == 0) {
+				m = 1;
+				for(int k=i;k<n;k++)
 				{
 					System.out.print(m++);
+				}
+			}else {
+				m = n-i;
+				for(int j=i;j<n;j++)
+				{
+					System.out.print(m--);
 				}
 			}
 			System.out.println();
 		}
 	}
 }
-
 //12345
 //4321
 //123
