@@ -1,6 +1,6 @@
 package logical;
 import java.util.*;
-public class LongPrefix1 {
+public class LongSuffix {
 public static String Long(String[] strs)
 {
 	String a= new StringBuffer(strs[0]).reverse()+"";
