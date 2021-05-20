@@ -19,8 +19,6 @@ public class Pattern27 {
 		}
 	}
 }
-
-
 //0
 //909
 //89098
