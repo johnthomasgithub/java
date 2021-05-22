@@ -24,7 +24,7 @@ public class Encap {
 	public static void main(String[] args) {
 		Student s = new Student();
 		s.setAge(12);
-		s.name = "john";
+		
 		s.setName("Tom");
 		System.out.println(s.getName());
 
