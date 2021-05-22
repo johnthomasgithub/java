@@ -1,8 +1,8 @@
 package logical;
 
 class Student{
-	String name;
-	int age;
+	private String name;
+	private int age;
 	public String getName() {
 		return name;
 	}
@@ -24,6 +24,7 @@ public class Encap {
 	public static void main(String[] args) {
 		Student s = new Student();
 		s.setAge(12);
+		s.name = "john";
 		s.setName("Tom");
 		System.out.println(s.getName());
 
