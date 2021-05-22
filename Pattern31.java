@@ -19,6 +19,20 @@ public class Pattern31 {
 			System.out.println();
 			m++;
 		}
+		m=4;
+		for(int i=7;i>=1;i-=2)
+		{
+			for(int j=7;j>=i;j--)
+			{
+				if((j%2==0))
+				{
+					System.out.print("*");
+				}else
+					System.out.print(m);
+			}
+			System.out.println();
+			m++;
+		}
 
 	}
 
