@@ -11,6 +11,7 @@ public class Justification {
 		result.append(" ".repeat(spacesOnRight));
 		return result.toString();
 	}
+	
 	public static String middleJustify(String[] words,int diff,int i,int j) {
 		int spacesNeeded = j-i-1;
 		int spaces = diff / spacesNeeded;
