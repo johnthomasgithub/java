@@ -22,7 +22,7 @@ public class Pattern31 {
 		m=4;
 		for(int i=7;i>=1;i-=2)
 		{
-			for(int j=7;j>=i;j--)
+			for(int j=1;j<=i;j++)
 			{
 				if((j%2==0))
 				{
@@ -31,9 +31,17 @@ public class Pattern31 {
 					System.out.print(m);
 			}
 			System.out.println();
-			m++;
+			m--;
 		}
-
 	}
-
 }
+//
+//
+//1
+//2*2
+//3*3*3
+//4*4*4*4
+//4*4*4*4
+//3*3*3
+//2*2
+//1
