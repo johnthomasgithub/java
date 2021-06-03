@@ -11,5 +11,4 @@ public class SwapWithoutTemp {
 		a = a-b;
 		System.out.println(a+" "+b);
 	}
-
 }
