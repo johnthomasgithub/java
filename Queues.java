@@ -30,6 +30,7 @@ class queuess{
 		return (-1);
 		}else
 		{
+			
 			int data = items[front];
 			
 			if(front >=rear)
