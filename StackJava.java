@@ -13,9 +13,7 @@ class Stackss{
 		if(top == max-1)
 			System.out.println("Overflow");
 		else
-		{
 			arr[++top] = data;
-		}
 	}
 	void pop()
 	{
@@ -29,7 +27,8 @@ class Stackss{
 	void display()
 	{
 		for(int i=top;i>=0;i--)
-			System.out.println(arr[i]);
+			System.out.print(arr[i]+" ");
+		System.out.println();
 	}
 }
 
