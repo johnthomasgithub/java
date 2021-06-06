@@ -6,7 +6,7 @@ class queuess{
 	int front = -1;
 	int rear = -1;
 	boolean isFull() {
-		if(front == 0 && rear ==size-1) {
+		if(front == -1 && rear==size-1) {
 			return true;
 		}
 		return false;
@@ -30,7 +30,6 @@ class queuess{
 		return (-1);
 		}else
 		{
-			
 			int data = items[front];
 			
 			if(front >=rear)
