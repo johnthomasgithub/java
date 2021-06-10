@@ -18,7 +18,7 @@ public class Pattern14 {
 		}
 	}
 }
-//
+
 //1
 //01
 //101
