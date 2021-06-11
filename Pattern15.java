@@ -16,6 +16,7 @@ public class Pattern15 {
 	}
 
 }
+
 //13579
 //3579
 //579
