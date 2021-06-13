@@ -14,5 +14,4 @@ public class MoniFact {
 			System.out.println(fact(n));
 		}
 	}
-
 }
