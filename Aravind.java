@@ -7,5 +7,4 @@ public class Aravind {
 		boolean Citizen = true;
 		System.out.println(age == 18 && Citizen);
 	}
-
 }
